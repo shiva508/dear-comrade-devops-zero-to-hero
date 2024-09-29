@@ -32,6 +32,8 @@ services:
       - 8080:8080
       - 50000:50000
     image: dear-comrade-jenkins:0.01
+    depends_on:
+      - serviceName
 networks:
   jenkins:
     external: true
